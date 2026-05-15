@@ -67,8 +67,11 @@ The **[Dynatrace MCP server](https://docs.dynatrace.com/docs/shortlink/dynatrace
 | [dt-obs-hosts](skills/dt-obs-hosts/SKILL.md) | Host and process metrics: CPU, memory, disk, network, and containers. |
 | [dt-obs-kubernetes](skills/dt-obs-kubernetes/SKILL.md) | Kubernetes clusters, pods, nodes, workloads, labels, and resource relationships. |
 | [dt-obs-aws](skills/dt-obs-aws/SKILL.md) | AWS resources: EC2, RDS, Lambda, ECS/EKS, VPC, load balancers, and cost optimization. |
+| [dt-obs-azure](skills/dt-obs-azure/SKILL.md) | Azure resources: VMs, VMSS, SQL Database, Storage, AKS, App Service, Functions, VNet, Event Hubs, Container Apps, and Key Vault. |
+| [dt-obs-gcp](skills/dt-obs-gcp/SKILL.md) | GCP resources: Compute Engine, GKE, Cloud Run, Pub/Sub, VPC, DNS, IAM, and Secret Manager. |
 | [dt-obs-logs](skills/dt-obs-logs/SKILL.md) | Log queries, filtering, pattern analysis, and log correlation. |
 | [dt-obs-problems](skills/dt-obs-problems/SKILL.md) | Problem entities, root cause analysis, impact assessment, and problem correlation. |
+| [dt-obs-predictive-analytics](skills/dt-obs-predictive-analytics/SKILL.md) | Time series forecasting, capacity saturation planning, and trend/anomaly detection across hosts, services, and infrastructure. |
 ### Platform
 
 | Skill | Description |
@@ -90,12 +93,12 @@ Each prompt references the relevant skills above — load those skills first for
 
 | Prompt | Description |
 |--------|-------------|
-| [daily-standup](prompts/daily-standup.prompt.md) | Generate a daily standup report for one or more services. |
-| [health-check](prompts/health-check.prompt.md) | Check the health of a service in production. |
-| [incident-response](prompts/incident-response.prompt.md) | Respond to an active production incident with triage, root cause, and a shareable report. |
-| [investigate-error](prompts/investigate-error.prompt.md) | Investigate recent errors using Davis Problems as the entry point (problems → logs → traces). |
-| [performance-regression](prompts/performance-regression.prompt.md) | Analyze whether a recent deployment caused a performance regression. |
-| [troubleshoot-problem](prompts/troubleshoot-problem.prompt.md) | Troubleshoot an existing Dynatrace problem with structured log and trace investigation. |
+| [dt-daily-standup](prompts/dt-daily-standup.prompt.md) | Generate a daily standup report for one or more services. |
+| [dt-health-check](prompts/dt-health-check.prompt.md) | Check the health of a service in production. |
+| [dt-incident-response](prompts/dt-incident-response.prompt.md) | Respond to an active production incident with triage, root cause, and a shareable report. |
+| [dt-investigate-error](prompts/dt-investigate-error.prompt.md) | Investigate recent errors using Davis Problems as the entry point (problems → logs → traces). |
+| [dt-performance-regression](prompts/dt-performance-regression.prompt.md) | Analyze whether a recent deployment caused a performance regression. |
+| [dt-troubleshoot-problem](prompts/dt-troubleshoot-problem.prompt.md) | Troubleshoot an existing Dynatrace problem with structured log and trace investigation. |
 
 ## How Skills Work
 
