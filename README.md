@@ -112,7 +112,7 @@ Install all skills without penalty. Agents only load what they need.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+Skill content (`skills/`) is maintained internally at Dynatrace and published here periodically. **PRs that modify skill files will not be accepted** — please [open an issue](../../issues/new) instead to suggest changes. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on what can be contributed directly.
 
 ## License
 
