@@ -15,12 +15,12 @@ Notebooks and dashboards are structurally similar. **Follow the `dt-app-dashboar
 1. Load domain skills BEFORE generating queries — do not invent DQL
 2. Validate ALL queries via `dtctl query '<DQL>' --plain` before adding to the notebook
 3. **Always set `"autoSelectVisualization": true`** in `visualizationSettings` unless the user explicitly requests a specific visualization type
-4. **ALWAYS deploy via `deploy_notebook.sh`** — never use `dtctl apply` directly:
+4. **Deploy with `dtctl apply`** — validation runs automatically, and the local file is deleted on success:
+   ```bash
+   dtctl apply -f notebook.json -o yaml
+   # preview without persisting:
+   dtctl apply -f notebook.json -o yaml --dry-run
    ```
-   bash scripts/deploy_notebook.sh notebook.json
-   ```
-   The script validates the notebook first and blocks deployment on errors. Skipping it risks deploying broken notebooks.
-   On successful deployment, the local file is deleted.
 5. When updating an existing notebook: **download first** with `dtctl get notebook <id> -o json --plain > notebook.json`, modify, then deploy. Never reconstruct from scratch or inject an `id` manually.
 
 ## Notebook JSON Structure
@@ -105,19 +105,7 @@ Notebooks support: `table`, `lineChart`, `areaChart`, `barChart`, `categoricalBa
 
 ## Validation & Deployment
 
-Use the scripts in `scripts/`:
-
-- **`notebook-validator.js`** — Validates notebook structure and executes all DQL queries. Run via:
-  ```
-  cat notebook.json | jq '{notebook: .}' | dtctl exec function -f scripts/notebook-validator.js --data - --plain | jq -r .result
-  ```
-  Or by notebook ID: `echo '{"notebookId":"<id>"}' | dtctl exec function -f scripts/notebook-validator.js --data - --plain | jq -r .result`
-
-- **`deploy_notebook.sh`** — Validates then deploys:
-  ```
-  bash scripts/deploy_notebook.sh notebook.json
-  bash scripts/deploy_notebook.sh --dry-run notebook.json
-  ```
+Validation runs automatically when you run `dtctl apply`. On success, the local file is deleted automatically.
 
 ## Related Skills
 
