@@ -63,7 +63,7 @@ Each tile in `tiles` must have a matching entry in `layouts` with `x`, `y`, `w`,
 
 ### Step 4: Design and Validate Queries
 
-```bash
+```dtctl
 dtctl query '<your DQL query>' --plain
 ```
 
@@ -77,7 +77,7 @@ queries from loaded skills.
 
 **Skip when creating.** Download the current server state **before **making any modifications:
 
-```bash
+```dtctl
 dtctl get dashboard <id> -o json --plain > dashboard.json
 ```
 
@@ -118,7 +118,7 @@ See [variables.md](./variables.md) for variable definitions and usage patterns.
 
 ### Step 7: Deploy
 
-```bash
+```dtctl
 dtctl apply -f dashboard.json -o yaml
 # preview without persisting:
 dtctl apply -f dashboard.json -o yaml --dry-run

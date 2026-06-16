@@ -72,12 +72,15 @@ The **[Dynatrace MCP server](https://docs.dynatrace.com/docs/shortlink/dynatrace
 | [dt-obs-logs](skills/dt-obs-logs/SKILL.md) | Log queries, filtering, pattern analysis, and log correlation. |
 | [dt-obs-problems](skills/dt-obs-problems/SKILL.md) | Problem entities, root cause analysis, impact assessment, and problem correlation. |
 | [dt-obs-predictive-analytics](skills/dt-obs-predictive-analytics/SKILL.md) | Time series forecasting, capacity saturation planning, and trend/anomaly detection across hosts, services, and infrastructure. |
+| [dt-alerting](skills/dt-alerting/SKILL.md) | End-to-end alerting lifecycle: anomaly detector setup, alert events in Grail, problem grouping, and workflow notification routing. |
+
 ### Platform
 
 | Skill | Description |
 |-------|-------------|
 | [dt-app-dashboards](skills/dt-app-dashboards/SKILL.md) | Create, modify, and analyze Dynatrace dashboards: tiles, layouts, variables, and visualizations. |
 | [dt-app-notebooks](skills/dt-app-notebooks/SKILL.md) | Create, modify, and analyze Dynatrace notebooks: sections, DQL queries, and analytics workflows. |
+| [dt-js-runtime](skills/dt-js-runtime/SKILL.md) | Dynatrace server-side JavaScript runtime: function contract, runtime limits, Web APIs, Node.js modules, and the `@dynatrace-sdk/*` catalog. |
 
 ### Migration
 
