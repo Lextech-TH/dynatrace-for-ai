@@ -74,6 +74,21 @@ The **[Dynatrace MCP server](https://docs.dynatrace.com/docs/shortlink/dynatrace
 | [dt-obs-predictive-analytics](skills/dt-obs-predictive-analytics/SKILL.md) | Time series forecasting, capacity saturation planning, and trend/anomaly detection across hosts, services, and infrastructure. |
 | [dt-alerting](skills/dt-alerting/SKILL.md) | End-to-end alerting lifecycle: anomaly detector setup, alert events in Grail, problem grouping, and workflow notification routing. |
 
+### Security
+
+| Skill | Description |
+|-------|-------------|
+| [dt-sec-insights](skills/dt-sec-insights/SKILL.md) | Query and analyze security data in `security.events`: Runtime Vulnerability Analytics, Runtime Application Protection, Automated Detections (MITRE ATT&CK), and Security Posture Management (KSPM/CSPM). |
+
+### Mobile Instrumentation
+
+| Skill | Description |
+|-------|-------------|
+| [dt-obs-android](skills/dt-obs-android/SKILL.md) | Instrument an existing Android project (Kotlin or Java) with the Dynatrace Mobile Agent: Gradle plugin, agent config, and user privacy opt-in. |
+| [dt-obs-flutter](skills/dt-obs-flutter/SKILL.md) | Integrate the Dynatrace Flutter Plugin: dependency setup, config, SDK bootstrap, navigation tracking, and verification. |
+| [dt-obs-ios-sdk](skills/dt-obs-ios-sdk/SKILL.md) | Set up the Dynatrace iOS SDK via Swift Package Manager: SPM dependency, Dynatrace.plist config, privacy opt-in, and Xcode build verification. |
+| [dt-obs-react-native](skills/dt-obs-react-native/SKILL.md) | Integrate the Dynatrace React Native Plugin for bare React Native and Expo: dependency setup, dynatrace.config.js, Babel registration, navigation tracking, and verification. |
+
 ### Platform
 
 | Skill | Description |
@@ -81,6 +96,7 @@ The **[Dynatrace MCP server](https://docs.dynatrace.com/docs/shortlink/dynatrace
 | [dt-app-dashboards](skills/dt-app-dashboards/SKILL.md) | Create, modify, and analyze Dynatrace dashboards: tiles, layouts, variables, and visualizations. |
 | [dt-app-notebooks](skills/dt-app-notebooks/SKILL.md) | Create, modify, and analyze Dynatrace notebooks: sections, DQL queries, and analytics workflows. |
 | [dt-js-runtime](skills/dt-js-runtime/SKILL.md) | Dynatrace server-side JavaScript runtime: function contract, runtime limits, Web APIs, Node.js modules, and the `@dynatrace-sdk/*` catalog. |
+| [dt-platform-costs](skills/dt-platform-costs/SKILL.md) | Query and analyze a Dynatrace tenant's actual billing and usage data with DQL: DPS consumption breakdown, cost-normalized spend ranking, chargeback/showback, cost drivers, and entity-level cost drill-down. |
 
 ### Migration
 
